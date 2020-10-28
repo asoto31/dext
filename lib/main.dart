@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'DEXT',
-      initialRoute: '/login',
+      initialRoute: '/home',
       onGenerateRoute: RouteGenerator.generateRoute,
     );
   }

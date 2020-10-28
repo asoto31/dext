@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:dext/login.dart';
 import 'package:dext/home.dart';
+import 'package:dext/statics.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -13,6 +14,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => LoginPage());
       case '/home':
         return MaterialPageRoute(builder: (_) => Home());
+      case '/statistics':
+        return MaterialPageRoute(builder: (_) => Statistics());
       default:
         // If there is no such named route in the switch statement, e.g. /third
         return _errorRoute();

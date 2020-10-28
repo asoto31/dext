@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Home extends StatelessWidget {
-  String imageUrl = "https://blog.hubspot.com/hubfs/image8-2.jpg";
-  String name = "Adrian";
-  String email = "sotoperez@google.com";
+  final String imageUrl = "https://blog.hubspot.com/hubfs/image8-2.jpg";
+  final String name = "Adrian";
+  final String email = "sotoperez@google.com";
 
   void signInWithGoogle() async {
     print("signin");
@@ -111,9 +112,11 @@ class NavDrawer extends StatelessWidget {
                 color: Colors.blue),
           ),
           ListTile(
-            leading: Icon(Icons.star),
-            title: Text('PPH'),
-            onTap: () => {},
+            leading: Icon(FontAwesomeIcons.chartPie),
+            title: Text('Statistics'),
+            onTap: () {
+              Navigator.of(context).pushNamed('/statistics');
+            },
           ),
         ],
       ),
