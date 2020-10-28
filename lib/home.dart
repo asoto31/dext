@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:dext/login.dart';
+import 'package:dext/sign_in.dart';
 
 class Home extends StatelessWidget {
-  String imageUrl = "https://blog.hubspot.com/hubfs/image8-2.jpg";
-  String name = "Adrian";
-  String email = "sotoperez@google.com";
+
 
   void signInWithGoogle() async {
     print("signin");
@@ -73,7 +73,7 @@ class Home extends StatelessWidget {
               RaisedButton(
                 onPressed: () {
                   signOutGoogle();
-                  // Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
+                  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
                 },
                 color: Colors.deepPurple,
                 child: Padding(
