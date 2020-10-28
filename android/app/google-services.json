@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "924766279365-34h6me8n8t4kkju84k75n53b5a3llsv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.adriansoto.dext",
+            "certificate_hash": "4c8af35a4ecf3b9f24f9c4f3f530dc9a8be8a77b"
+          }
+        },
+        {
           "client_id": "924766279365-9k66at3t1qqaonuqap7gs86vivl0955p.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
