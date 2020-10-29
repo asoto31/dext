@@ -5,13 +5,6 @@ import 'package:dext/sign_in.dart';
 
 class Home extends StatelessWidget {
 
-  void signInWithGoogle() async {
-    print("signin");
-  }
-  void signOutGoogle() async{
-    print("signout");
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,9 +105,9 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.chartPie),
-            title: Text('Statistics'),
+            title: Text('Counts'),
             onTap: () {
-              Navigator.of(context).pushNamed('/statistics');
+              Navigator.of(context).pushNamed('/counts');
             },
           ),
         ],
