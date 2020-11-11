@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:dext/login.dart';
 import 'package:dext/home.dart';
 import 'package:dext/counts.dart';
+import 'package:dext/users.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -16,6 +17,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Home());
       case '/counts':
         return MaterialPageRoute(builder: (_) => Counts());
+      case '/users':
+        return MaterialPageRoute(builder: (_) => Users());
       default:
         // If there is no such named route in the switch statement, e.g. /third
         return _errorRoute();

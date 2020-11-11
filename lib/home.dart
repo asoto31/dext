@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:dext/login.dart';
 import 'package:dext/sign_in.dart';
+import 'package:dext/users.dart';
 
 class Home extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +78,7 @@ class Home extends StatelessWidget {
                 ),
                 elevation: 5,
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40)),
+                  borderRadius: BorderRadius.circular(40)),
               )
             ],
           ),
@@ -108,6 +108,13 @@ class NavDrawer extends StatelessWidget {
             title: Text('Counts'),
             onTap: () {
               Navigator.of(context).pushNamed('/counts');
+            },
+          ),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.userAlt),
+            title: Text('Users'),
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Users()));
             },
           ),
         ],
